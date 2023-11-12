@@ -9,13 +9,13 @@ router.get('/', async (req, res) => {
   
     try{
       const categoryData = await Category.findAll({
-        include: [Products],
+        include: [Product],
        });
       res.status(201).json({status: ('success'), categoryData})
      } catch (err){
       res.status(501).json({status: ('error'), categoryData: err.message})
   
-     }s
+     }
 }
 );
 
