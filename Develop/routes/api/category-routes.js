@@ -23,8 +23,8 @@ router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try{
-    const categoryData = await Category.findAll(req.params.id, {
-      include: [Products],
+    const categoryData = await Category.findByPk(req.params.id, {
+      include: [Product],
     });
     res.status(201).json({status: ('success'), categoryData})
    } catch (err){
@@ -76,3 +76,5 @@ router.delete('/:id', async (req, res) => {
    }});
 
 module.exports = router;
+
+

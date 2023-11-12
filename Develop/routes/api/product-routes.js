@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try{
-    const productData = await Product.findAll(req.params.id, {
+    const productData = await Product.findByPk(req.params.id, {
       include: [Category, {model: Tag, through: ProductTag }],
     });
     res.status(201).json({status: ('success'), productData})
@@ -76,7 +76,7 @@ router.put('/:id', (req, res) => {
     .then((product) => {
       if (req.body.tagIds && req.body.tagIds.length) {
         
-        ProductTag.findAll({
+        ProductTag.findByPk({
           where: { product_id: req.params.id }
         }).then((productTags) => {
           // create filtered list of new tag_ids
