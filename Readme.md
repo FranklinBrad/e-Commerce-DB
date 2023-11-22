@@ -17,6 +17,10 @@
 
   ## walkthrough
 
+
+https://github.com/FranklinBrad/e-commerce-site/assets/144159410/de65969b-6ab4-4328-8b23-a529d8ace5fc
+
+
   ## Questions
 
   Franklin Bradley
