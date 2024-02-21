@@ -2,7 +2,7 @@
 
   ## Description
   
-  With this application you can add, remove and update your Products, Categories and tags from your site.
+  Do you need a database that can handle the back end of you e-commerce site? With this application you can add, remove and update your Products, Categories and tags from your site.
  
   ## Installation
  
@@ -12,8 +12,6 @@
  
   open in in insomnia and use the routes to complete the tasks you need to complete.
 
-  ## sources
-  To complete this project I used some code from a boiler plate givin to my class by my teacher, I also used some code from previous classwork.
 
   ## walkthrough
 
